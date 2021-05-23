@@ -19,7 +19,7 @@ class PrefectureViewController: UIViewController, UITableViewDataSource, UITable
         "熊本県","大分県","宮崎県","鹿児島県","沖縄県"
     ]
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,18 +34,21 @@ class PrefectureViewController: UIViewController, UITableViewDataSource, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PrefectureTableViewCell.identifier, for: indexPath) as! PrefectureTableViewCell
+        let color: UIColor
         let index = indexPath.row
-        
         cell.prefectureLabel?.text = prefectures[index]
         cell.orderLabel?.text = "\(index + 1)番目の都道府県です"
+        
         switch index % 3 {
         case 0:
-            cell.backgroundColor = UIColor.systemRed
+            color = UIColor.systemRed
         case 1:
-            cell.backgroundColor = UIColor.systemGreen
+            color = UIColor.systemGreen
         default:
-            cell.backgroundColor = UIColor.systemBlue
+            color = UIColor.systemBlue
         }
+        
+        cell.backgroundColor = color
         return cell
     }
 }
