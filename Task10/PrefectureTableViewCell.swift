@@ -9,8 +9,8 @@ import UIKit
 
 class PrefectureTableViewCell: UITableViewCell {
 
-    @IBOutlet private weak var prefectureLabel: UILabel!
-    @IBOutlet private weak var orderLabel: UILabel!
+    @IBOutlet weak var prefectureLabel: UILabel!
+    @IBOutlet weak var orderLabel: UILabel!
     
     static var identifier: String { String(describing: self) }
     static var nib: UINib { UINib(nibName: String(describing: self), bundle: nil) }
@@ -22,5 +22,4 @@ class PrefectureTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
 }
