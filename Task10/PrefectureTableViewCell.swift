@@ -9,17 +9,19 @@ import UIKit
 
 class PrefectureTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var prefectureLabel: UILabel!
-    @IBOutlet weak var orderLabel: UILabel!
+    @IBOutlet private weak var prefectureLabel: UILabel!
+    @IBOutlet private weak var orderLabel: UILabel!
     
     static var identifier: String { String(describing: self) }
     static var nib: UINib { UINib(nibName: String(describing: self), bundle: nil) }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    private static let backgroundColors: [UIColor] = [
+        .systemRed, .systemGreen, .systemBlue
+    ]
+
+    func configure(prefectureName: String, index: Int) {
+        prefectureLabel?.text = prefectureName
+        orderLabel?.text = "\(index + 1)番目の都道府県です"
+        backgroundColor = Self.backgroundColors[index % Self.backgroundColors.count]
     }
 }
