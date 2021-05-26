@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A47245AB265B6877000C0EBB /* Prefectures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47245AA265B6877000C0EBB /* Prefectures.swift */; };
 		A4F0F8822658BE1C00E4AF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0F8812658BE1C00E4AF96 /* AppDelegate.swift */; };
 		A4F0F8842658BE1C00E4AF96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0F8832658BE1C00E4AF96 /* SceneDelegate.swift */; };
 		A4F0F8862658BE1C00E4AF96 /* PrefectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0F8852658BE1C00E4AF96 /* PrefectureViewController.swift */; };
@@ -38,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A47245AA265B6877000C0EBB /* Prefectures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefectures.swift; sourceTree = "<group>"; };
 		A4F0F87E2658BE1C00E4AF96 /* Task10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F0F8812658BE1C00E4AF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4F0F8832658BE1C00E4AF96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 			children = (
 				A4F0F8812658BE1C00E4AF96 /* AppDelegate.swift */,
 				A4F0F8832658BE1C00E4AF96 /* SceneDelegate.swift */,
-				A47245AA265B6877000C0EBB /* Prefectures.swift */,
 				A4F0F8852658BE1C00E4AF96 /* PrefectureViewController.swift */,
 				A4F0F8D12658D40F00E4AF96 /* PrefectureTableViewCell.swift */,
 				A4F0F8D22658D40F00E4AF96 /* PrefectureTableViewCell.xib */,
@@ -272,7 +269,6 @@
 				A4F0F8862658BE1C00E4AF96 /* PrefectureViewController.swift in Sources */,
 				A4F0F8822658BE1C00E4AF96 /* AppDelegate.swift in Sources */,
 				A4F0F8842658BE1C00E4AF96 /* SceneDelegate.swift in Sources */,
-				A47245AB265B6877000C0EBB /* Prefectures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
